@@ -1,0 +1,9 @@
+#brandLogo{
+    height: 75px;
+}
+
+@media (max-width: 576px) {
+    #brandLogo{
+        height: 50px;
+    }
+}
