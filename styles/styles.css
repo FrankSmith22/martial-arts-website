@@ -7,3 +7,15 @@
         height: 50px;
     }
 }
+
+.text-red{
+    color: red;
+}
+
+.text-primary-sub{
+    color: #439bfa;
+}
+
+p{
+    line-height: unset;
+}
