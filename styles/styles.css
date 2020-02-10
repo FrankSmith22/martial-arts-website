@@ -19,3 +19,11 @@
 p{
     line-height: unset;
 }
+
+.padded-row{
+    padding-top: 4rem;
+}
+
+.octagon-bullets{
+    list-style-image: url('/assets/imgs/octagonal_bullets_7x7.svg');
+}
