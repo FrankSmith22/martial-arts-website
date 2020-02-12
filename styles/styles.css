@@ -27,3 +27,14 @@ p{
 .octagon-bullets{
     list-style-image: url('/assets/imgs/octagonal_bullets_7x7.svg');
 }
+
+h1, h2 {
+    font-family: 'Raleway', sans-serif;
+}
+
+.map-card{
+    transition: 0.3s ease;
+}
+.map-card:hover{
+    box-shadow: 0px 0px 6px gray;
+}
