@@ -30,6 +30,7 @@ p{
 
 h1, h2 {
     font-family: 'Raleway', sans-serif;
+    padding-bottom: 1rem;
 }
 
 .map-card{
@@ -37,4 +38,17 @@ h1, h2 {
 }
 .map-card:hover{
     box-shadow: 0px 0px 6px gray;
+}
+
+#instructorTabs{
+    font-size: 18px;
+}
+
+.w-33{
+    width: 33.33%!important;
+}
+
+.carousel-caption{
+    background-color: #95959569;
+    border-radius: 1rem;
 }
