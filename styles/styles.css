@@ -16,6 +16,10 @@
     color: #439bfa;
 }
 
+.bg-primary-light{
+    background-color: #9acafe;
+}
+
 p{
     line-height: unset;
 }
@@ -33,10 +37,10 @@ h1, h2 {
     padding-bottom: 1rem;
 }
 
-.map-card{
+.card{
     transition: 0.3s ease;
 }
-.map-card:hover{
+.map-card:hover, .card.hover:hover{
     box-shadow: 0px 0px 6px gray;
 }
 
@@ -51,4 +55,13 @@ h1, h2 {
 .carousel-caption{
     background-color: #95959569;
     border-radius: 1rem;
+}
+
+.border-gray-light{
+    border-color: #bcbcbc;
+}
+
+.classPhotoImg{
+    height: 15rem;
+    object-fit: cover;
 }
