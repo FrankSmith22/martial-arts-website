@@ -64,4 +64,10 @@ h1, h2 {
 .classPhotoImg{
     height: 15rem;
     object-fit: cover;
+    cursor: pointer;
+}
+
+#classPhotoModalImage{
+    object-fit: cover;
+    cursor: pointer;
 }

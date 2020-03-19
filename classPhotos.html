@@ -83,7 +83,7 @@
             <div class="row">
                 <div class="card-deck pt-4">
                     <div class="card hover border-gray-light">
-                        <img src="assets/imgs/class_group_photo2.jpg" class="card-img-top classPhotoImg" />
+                        <img src="assets/imgs/class_group_photo2.jpg" class="card-img-top classPhotoImg"/>
                         <div class="card-body text-center bg-primary-light">
                             <p>Class group Photo</p>
                         </div>
@@ -145,6 +145,22 @@
             </div>
         </div>
 
+        <div class="modal" id="classPhotoModal">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title" id="classPhotoModalTitle"></div>
+                        <button type="button" class="close" id="modalClose" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body mx-auto">
+                        <a id="classPhotoModalAnchor" href="" target="_blank"><img id="classPhotoModalImage" class="img-fluid" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <footer class="site-footer mt-5 pt-3 bg-dark">
             <div class="container">
                 <div class="row">
@@ -185,5 +201,7 @@
         <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
         <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+        <script src="js/script.js"></script>
     </body>
 </html>
