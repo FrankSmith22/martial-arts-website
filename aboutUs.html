@@ -52,7 +52,7 @@
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Media
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="./classPhotos.html">Class Photos</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="./kataVideos.html">Kata Videos</a>
@@ -61,8 +61,15 @@
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="./conceptExercisesVideos.html">Concept Exercises Videos</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="./historicalPhotos.html">Historical Photos</a>
-                        </div>
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">Historical Photos</a>
+                                <ul class="dropdown-menu">
+                                    <a class="dropdown-item" href="./mitosePhotos.html">Mitose Sensei</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="./templePhotos.html">Photos of Kinkaizan Daion Kuji</a>
+                                </ul>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </div>
@@ -178,7 +185,7 @@
                             </div>
                             <div class="row pt-4">
                                 <div class="col">
-                                    <h2 class="text-primary-sub">Josh Simon Sensei</h2>
+                                    <h2 class="text-primary-sub">Josh Simon Sensei&nbsp;&nbsp;&nbsp;<span class="text-muted" style="font-size:1.33rem;">Past Instructor</span></h2>
                                     <p>As a second-generation martial artist, my training began informally from my father in 1981 at age 6.  He had been practicing Gojo Ryu at the time for about ten years.  My first formal art was the fencing program at Rancocas Valley Regional High School in New Jersey in 1987, and I did that for a number of years until coming into contact with my original martial arts school in Cherry Hill, NJ in 1992.  This class was led by Sensei Merrick and Traci Rosenberg and became my base school for learning the Okinawan art of Wado Ryu.</p>
                                     <p>My career took me to various places over the next several years where I joined a number of classes and spent a few years in each of them.  These included Danzan Ryu Jiujitsu (Sensei Barb Gessner) and Isshyn Ryu karate under the guidance of Sensei Arsenio Advincula and Sensei Glenn Wargo.  I have also trained in Western Martial Arts forms through the Association for Renaissance Martial Arts (ARMA) and the Markland Medieval Mercenary Militia.</p>
                                     <p>Martial arts can be a powerful vehicle for self-development.  My teachings use the study of a number of different martial disciplines for personal transformation and growth.  The class honors the traditional values of fitness, discipline, and self-defense while weaving in deeper insights from meditation, breathing, and and other elements.  Students will be taught techniques from a number of Eastern and Western styles and guided through their own construction of a life practice both inside and outside of class. Based on Integral Theory, a profound system for understanding the universe, students will ultimately gain insights into themselves.</p>
@@ -231,5 +238,7 @@
         <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
         <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+        <script src="js/script.js"></script>
     </body>
 </html>

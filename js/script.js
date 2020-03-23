@@ -1,5 +1,22 @@
 $(function () {
     $('[data-toggle="tooltip"]').tooltip();
+
+    //Dropdown submenu code
+    $('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
+        if (!$(this).next().hasClass('show')) {
+          $(this).parents('.dropdown-menu').first().find('.show').removeClass('show');
+        }
+        var $subMenu = $(this).next('.dropdown-menu');
+        $subMenu.toggleClass('show');
+      
+      
+        $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
+          $('.dropdown-submenu .show').removeClass('show');
+        });
+      
+      
+        return false;
+      });
     $('.carousel').carousel( {interval: 2000} );
 
     $('.classPhotoImg').click(function(e){
