@@ -1,129 +1,256 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
-        <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-        <link rel="stylesheet" href="styles/styles.css" />
-        <link rel="icon" href="/favicon.ico?" type="image/x-icon">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <title>DAP Kata Videos</title>
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <div class="navbar-brand">
-                <a href="/index.html"><img id="brandLogo" src="/assets/imgs/cropped-dap_mon.jpg"></a>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="icon" href="/favicon.ico?" type="image/x-icon">
+
+    <title>DAP Kata Videos</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="navbar-brand">
+            <a href="/index.html"><img id="brandLogo" src="/assets/imgs/cropped-dap_mon.jpg"></a>
+        </div>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navigation"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navigation">
+            <ul class="navbar-nav">
+                <li class="nav-item mr-2">
+                    <a class="nav-link" href="./index.html">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item mr-2">
+                    <a class="nav-link" href="./posts.html">
+                        Posts
+                    </a>
+                </li>
+                <li class="nav-item mr-2">
+                    <a class="nav-link" href="./aboutUs.html">
+                        About Us
+                    </a>
+                </li>
+                <li class="nav-item mr-2">
+                    <a class="nav-link" href="./classTimesRates.html">
+                        Class Times and Rates
+                    </a>
+                </li>
+                <li class="nav-item mr-2">
+                    <a class="nav-link" href="./studentResources.html">
+                        Student Resources
+                    </a>
+                </li>
+                <li class="nav-item mr-2 dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Media
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="./classPhotos.html">Class Photos</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="./kataVideos.html">Kata Videos</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="./classVideos.html">Class Videos</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="./conceptExercisesVideos.html">Concept Exercises Videos</a>
+                        <div class="dropdown-divider"></div>
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#">Historical Photos</a>
+                            <ul class="dropdown-menu">
+                                <a class="dropdown-item" href="./mitosePhotos.html">Mitose Sensei</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="./templePhotos.html">Photos of Kinkaizan Daion Kuji</a>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col pt-4 text-center align-self-center">
+                <img src="/assets/imgs/cropped-dap_mon.jpg" />
             </div>
-            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-collapse collapse" id="navigation">
-                <ul class="navbar-nav">
-                    <li class="nav-item mr-2">
-                        <a class="nav-link" href="./index.html">
-                            Home
-                        </a>
+        </div>
+        <div class="row pt-4">
+            <div class="col">
+                <h1 class="text-primary text-center">Kata Videos</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+                <p class="text-center">The videos on this page were intended to help students study their kata at home.
+                    These videos aren’t intended to teach the kata, but to help students who learned them to remember
+                    them and practice at home.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 mr-2">
+                <ul class="nav sticky-top nav-pills flex-md-column pt-4">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#pillContentOctagon" data-toggle="pill">Octagon Drills</a>
                     </li>
-                    <li class="nav-item mr-2">
-                        <a class="nav-link" href="./posts.html">
-                            Posts
-                        </a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pillContentEmptyHand" data-toggle="pill">Empty-Handed</a>
                     </li>
-                    <li class="nav-item mr-2">
-                        <a class="nav-link" href="./aboutUs.html">
-                            About Us
-                        </a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pillContentPinanHeian" data-toggle="pill">Pinan/Heian</a>
                     </li>
-                    <li class="nav-item mr-2">
-                        <a class="nav-link" href="./classTimesRates.html">
-                            Class Times and Rates
-                        </a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pillContentNekoButo" data-toggle="pill">Neko-Buto</a>
                     </li>
-                    <li class="nav-item mr-2">
-                        <a class="nav-link" href="./studentResources.html">
-                            Student Resources
-                        </a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pillContentToyama" data-toggle="pill">Toyama Ryu Iai-bato jutsu</a>
                     </li>
-                    <li class="nav-item mr-2 dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Media
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="./classPhotos.html">Class Photos</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="./kataVideos.html">Kata Videos</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="./classVideos.html">Class Videos</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="./conceptExercisesVideos.html">Concept Exercises Videos</a>
-                            <div class="dropdown-divider"></div>
-                            <li class="dropdown-submenu">
-                                <a class="dropdown-item dropdown-toggle" href="#">Historical Photos</a>
-                                <ul class="dropdown-menu">
-                                    <a class="dropdown-item" href="./mitosePhotos.html">Mitose Sensei</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="./templePhotos.html">Photos of Kinkaizan Daion Kuji</a>
-                                </ul>
-                            </li>
-                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pillContentMaAe" data-toggle="pill">Ma-ae no jo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pillContentGerman" data-toggle="pill">German longsword</a>
                     </li>
                 </ul>
             </div>
-        </nav>
+            <div class="col-md">
+                <div class="tab-content">
 
-        <!-- Content -->
-        <div class="container">
-            <div class="row">
-                <div class="col pt-4 text-center align-self-center">
-                    <img src="/assets/imgs/cropped-dap_mon.jpg" />
+                    <div class="tab-pane fade show active" id="pillContentOctagon">
+                        <div class="row">
+                            <div class="col-lg-5 col-xl-4 col-md-6 mt-3 mb-3">
+                                <div class="card kataCard border-primary rounded">
+                                    <div class="card-header">
+                                        <h5 class="card-title">Kata Info</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text">There are many versions of the octagon, but these are a few
+                                            that I list as requirements for earning rank. This exercise is also known as
+                                            the temple dance, which gives you some idea of the aerobic workout you could
+                                            gain from doing it. This exercise is great for allowing you to practice any
+                                            martial movement or technique with respect to angling. The student should
+                                            experiment with making their own versions of this.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <p class="text-muted">Last updated: 3/24/20</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade show" id="pillContentEmptyHand">
+                        <div class="row">
+                        </div>
+                    </div>
+                    <div class="tab-pane fade show" id="pillContentPinanHeian">
+                        <div class="row">
+                            <div class="col-lg-5 col-xl-4 col-md-6 mt-3 mb-3">
+                                <div class="card kataCard border-primary rounded">
+                                    <div class="card-header">
+                                        <h5 class="card-title">Kata Info</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text">This very popular karate kata series, meaning “peaceful
+                                            mind”
+                                            is an excellent series, and is included in our electives section of the
+                                            curriculum.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <p class="text-muted">Last updated: 3/24/20</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade show" id="pillContentNekoButo">
+                        <div class="row">
+                            <div class="col-lg-5 col-xl-4 col-md-6 mt-3 mb-3">
+                                <div class="card kataCard border-primary rounded">
+                                    <div class="card-header">
+                                        <h5 class="card-title">Kata Info</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text">This is the cat-dance form series, developed by James
+                                            Mitose sensei in honor of Gichin Funakoshi, the “cat man”.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <p class="text-muted">Last updated: 3/24/20</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade show" id="pillContentToyama">
+                        <div class="row">
+                        </div>
+                    </div>
+                    <div class="tab-pane fade show" id="pillContentMaAe">
+                        <div class="row"></div>
+                    </div>
+                    <div class="tab-pane fade show" id="pillContentGerman">
+                        <div class="row"></div>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <footer class="site-footer mt-5 pt-3 bg-dark">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-lg-4">
-                        <h5 class="text-white">About</h5>
-                        <ul class="list-unstyled text-light">
-                            <li>Frank Smith Sensei</li>
-                            <li>Defensive Arts Plus</li>
-                            <li><a href="https://goo.gl/maps/rbAebP4RgGtHrsCo9">MacDade Blvd. & Fairview Rd.<br>Woodlyn, PA 19094</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 text-white">
-                        <h5>Social</h5>
-                        <ul class="list-unstyled">
-                            <li><a href="mailto:frank.smith@defensiveartsplus.com"><i class="fa fa-envelope-o"></i> &nbsp;frank.smith@defensiveartsplus.com</a></li>
-                            <li><a href="tel:+16104940649"><i class="fa fa-phone"></i> &nbsp;(610) 494-0649</a></li>
-                        </ul>
-                        <!--<a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>-->
-                    </div>
-                    <div class="col-lg-4 text-white">
-                        <h5>Quick Links</h5>
-                        <ul class="list-unstyled text-light">
-                            <li><a href="./index.html">Home</a></li>
-                            <li><a href="./aboutUs.html">About Us</a></li>
-                            <li><a href="classTimesRates.html">Class Times and Rates</a></li>
-                        </ul>
-                    </div>
+    <footer class="site-footer mt-5 pt-3 bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-lg-4">
+                    <h5 class="text-white">About</h5>
+                    <ul class="list-unstyled text-light">
+                        <li>Frank Smith Sensei</li>
+                        <li>Defensive Arts Plus</li>
+                        <li><a href="https://goo.gl/maps/rbAebP4RgGtHrsCo9">MacDade Blvd. & Fairview Rd.<br>Woodlyn, PA
+                                19094</a></li>
+                    </ul>
                 </div>
-                <div class="row">
-                    <div class="col text-center">
-                        <span class="text-light">Made in <a class="text-light" href="https://getbootstrap.com/">Bootstrap</a></span>
-                    </div>
+                <div class="col-sm-6 col-lg-4 text-white">
+                    <h5>Social</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="mailto:frank.smith@defensiveartsplus.com"><i class="fa fa-envelope-o"></i>
+                                &nbsp;frank.smith@defensiveartsplus.com</a></li>
+                        <li><a href="tel:+16104940649"><i class="fa fa-phone"></i> &nbsp;(610) 494-0649</a></li>
+                    </ul>
+                    <!--<a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>-->
+                </div>
+                <div class="col-lg-4 text-white">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled text-light">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./aboutUs.html">About Us</a></li>
+                        <li><a href="classTimesRates.html">Class Times and Rates</a></li>
+                    </ul>
                 </div>
             </div>
-        </footer>
+            <div class="row">
+                <div class="col text-center">
+                    <span class="text-light">Made in <a class="text-light"
+                            href="https://getbootstrap.com/">Bootstrap</a></span>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-        <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
-        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
-        <script src="js/script.js"></script>
-    </body>
+    <script src="js/script.js"></script>
+</body>
+
 </html>

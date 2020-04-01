@@ -50,7 +50,7 @@ p{
     list-style-image: url('/assets/imgs/octagonal_bullets_7x7.svg');
 }
 
-h1, h2 {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Raleway', sans-serif;
     padding-bottom: 1rem;
 }
@@ -88,4 +88,16 @@ h1, h2 {
 #classPhotoModalImage{
     object-fit: cover;
     cursor: pointer;
+}
+
+.kataCard > .card-header > h5{
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+
+@media screen and (min-width: 500px){
+    .mobileOnlyBr{
+        display: none;
+    }
 }
