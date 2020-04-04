@@ -1,129 +1,226 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
-        <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-        <link rel="stylesheet" href="styles/styles.css" />
-        <link rel="icon" href="/favicon.ico?" type="image/x-icon">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <title>DAP Class Videos</title>
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <div class="navbar-brand">
-                <a href="/index.html"><img id="brandLogo" src="/assets/imgs/cropped-dap_mon.jpg"></a>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="icon" href="/favicon.ico?" type="image/x-icon">
+
+    <title>DAP Class Videos</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="navbar-brand">
+            <a href="/index.html"><img id="brandLogo" src="/assets/imgs/cropped-dap_mon.jpg"></a>
+        </div>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navigation"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navigation">
+            <ul class="navbar-nav">
+                <li class="nav-item mr-2">
+                    <a class="nav-link" href="./index.html">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item mr-2">
+                    <a class="nav-link" href="./posts.html">
+                        Posts
+                    </a>
+                </li>
+                <li class="nav-item mr-2">
+                    <a class="nav-link" href="./aboutUs.html">
+                        About Us
+                    </a>
+                </li>
+                <li class="nav-item mr-2">
+                    <a class="nav-link" href="./classTimesRates.html">
+                        Class Times and Rates
+                    </a>
+                </li>
+                <li class="nav-item mr-2">
+                    <a class="nav-link" href="./studentResources.html">
+                        Student Resources
+                    </a>
+                </li>
+                <li class="nav-item mr-2 dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Media
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="./classPhotos.html">Class Photos</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="./kataVideos.html">Kata Videos</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="./classVideos.html">Class Videos</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="./conceptExercisesVideos.html">Concept Exercises Videos</a>
+                        <div class="dropdown-divider"></div>
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#">Historical Photos</a>
+                            <ul class="dropdown-menu">
+                                <a class="dropdown-item" href="./mitosePhotos.html">Mitose Sensei</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="./templePhotos.html">Photos of Kinkaizan Daion Kuji</a>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col pt-4 text-center align-self-center">
+                <img src="/assets/imgs/cropped-dap_mon.jpg" />
             </div>
-            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-collapse collapse" id="navigation">
-                <ul class="navbar-nav">
-                    <li class="nav-item mr-2">
-                        <a class="nav-link" href="./index.html">
-                            Home
-                        </a>
-                    </li>
-                    <li class="nav-item mr-2">
-                        <a class="nav-link" href="./posts.html">
-                            Posts
-                        </a>
-                    </li>
-                    <li class="nav-item mr-2">
-                        <a class="nav-link" href="./aboutUs.html">
-                            About Us
-                        </a>
-                    </li>
-                    <li class="nav-item mr-2">
-                        <a class="nav-link" href="./classTimesRates.html">
-                            Class Times and Rates
-                        </a>
-                    </li>
-                    <li class="nav-item mr-2">
-                        <a class="nav-link" href="./studentResources.html">
-                            Student Resources
-                        </a>
-                    </li>
-                    <li class="nav-item mr-2 dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Media
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="./classPhotos.html">Class Photos</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="./kataVideos.html">Kata Videos</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="./classVideos.html">Class Videos</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="./conceptExercisesVideos.html">Concept Exercises Videos</a>
-                            <div class="dropdown-divider"></div>
-                            <li class="dropdown-submenu">
-                                <a class="dropdown-item dropdown-toggle" href="#">Historical Photos</a>
-                                <ul class="dropdown-menu">
-                                    <a class="dropdown-item" href="./mitosePhotos.html">Mitose Sensei</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="./templePhotos.html">Photos of Kinkaizan Daion Kuji</a>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
+        </div>
+        <div class="row pt-4">
+            <div class="col">
+                <h1 class="text-primary text-center">Class Videos</h1>
             </div>
-        </nav>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+                <p class="text-center">This page contains videos of examples of some of the things we do in class.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card-deck pt-4">
+                <div class="card hover border-blue-light rounded">
+                    <div class="card-img-top embed-responsive embed-responsive-16by9">
+                        <video class="embed-responsive-item" controls src="assets/videos/aiki-style_throw_1.mp4">
+                        </video>
+                    </div>
+                    <div class="card-body text-center bg-footer-gray">
+                        <p>This is an example of an aiki style throw, where the attacker’s energy is used against
+                            himself.</p>
+                    </div>
+                </div>
+                <div class="card hover border-blue-light rounded">
+                    <div class="card-img-top embed-responsive embed-responsive-16by9">
+                        <video class="embed-responsive-item" controls src="assets/videos/aiki-style_throw_2.mp4">
+                        </video>
+                    </div>
+                    <div class="card-body text-center bg-footer-gray">
+                        <p>This is another example of an aiki style throw, where the attacker’s energy is used against
+                            himself.</p>
+                    </div>
+                </div>
+                <div class="card hover border-blue-light rounded">
+                    <div class="card-img-top embed-responsive embed-responsive-16by9">
+                        <video class="embed-responsive-item" controls
+                            src="assets/videos/semi-freestyle_bunkai_throwing.mp4">
+                        </video>
+                    </div>
+                    <div class="card-body text-center bg-footer-gray">
+                        <p>This is an example of semi-freestyle bunkai with aiki style throwing. This is not a memorized
+                            set, but is an exercise with general, principle-based goals.</p>
+                    </div>
+                </div>
+                <div class="card hover border-blue-light rounded">
+                    <div class="card-img-top embed-responsive embed-responsive-16by9">
+                        <video class="embed-responsive-item" controls
+                            src="assets/videos/semi-freestyle_bunkai_throwing_josh.mp4">
+                        </video>
+                    </div>
+                    <div class="card-body text-center bg-footer-gray">
+                        <p>This is an example of semi-freestyle bunkai with aiki style throwing. This is not a memorized
+                            set, but is an exercise with general, principle-based goals.</p>
+                    </div>
+                </div>
+                <div class="card hover border-blue-light rounded">
+                    <div class="card-img-top embed-responsive embed-responsive-16by9">
+                        <video class="embed-responsive-item" controls src="assets/videos/tameshigiri_godan_giri.mp4">
+                        </video>
+                    </div>
+                    <div class="card-body text-center bg-footer-gray">
+                        <p>From time to time, I have a test-cutting seminar at my house. This is me doing godan gerri,
+                            or 5 level cuts.</p>
+                    </div>
+                </div>
+                <div class="card hover border-blue-light rounded">
+                    <div class="card-img-top embed-responsive embed-responsive-16by9">
+                        <video class="embed-responsive-item" controls
+                            src="assets/videos/tameshigiri_Brian_naginata.mp4">
+                        </video>
+                    </div>
+                    <div class="card-body text-center bg-footer-gray">
+                        <p>Here’s my brother-in-law also trying his hand at the naginata.</p>
+                    </div>
+                </div>
 
-        <!-- Content -->
-        <div class="container">
-            <div class="row">
-                <div class="col pt-4 text-center align-self-center">
-                    <img src="/assets/imgs/cropped-dap_mon.jpg" />
+                <div class="card hover border-blue-light rounded">
+                    <div class="card-img-top embed-responsive embed-responsive-16by9">
+                        <video class="embed-responsive-item" controls
+                            src="assets/videos/tameshigiri_Frank_bastard_sword_2.mp4">
+                        </video>
+                    </div>
+                    <div class="card-body text-center bg-footer-gray">
+                        <p>We’re not prejudiced against the european medieval weapons either. Here I am with my teacher,
+                            Kevin’s bastard sword.</p>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <footer class="site-footer mt-5 pt-3 bg-dark">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-lg-4">
-                        <h5 class="text-white">About</h5>
-                        <ul class="list-unstyled text-light">
-                            <li>Frank Smith Sensei</li>
-                            <li>Defensive Arts Plus</li>
-                            <li><a href="https://goo.gl/maps/rbAebP4RgGtHrsCo9">MacDade Blvd. & Fairview Rd.<br>Woodlyn, PA 19094</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 text-white">
-                        <h5>Social</h5>
-                        <ul class="list-unstyled">
-                            <li><a href="mailto:frank.smith@defensiveartsplus.com"><i class="fa fa-envelope-o"></i> &nbsp;frank.smith@defensiveartsplus.com</a></li>
-                            <li><a href="tel:+16104940649"><i class="fa fa-phone"></i> &nbsp;(610) 494-0649</a></li>
-                        </ul>
-                        <!--<a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>-->
-                    </div>
-                    <div class="col-lg-4 text-white">
-                        <h5>Quick Links</h5>
-                        <ul class="list-unstyled text-light">
-                            <li><a href="./index.html">Home</a></li>
-                            <li><a href="./aboutUs.html">About Us</a></li>
-                            <li><a href="classTimesRates.html">Class Times and Rates</a></li>
-                        </ul>
-                    </div>
+    <footer class="site-footer mt-5 pt-3 bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-lg-4">
+                    <h5 class="text-white">About</h5>
+                    <ul class="list-unstyled text-light">
+                        <li>Frank Smith Sensei</li>
+                        <li>Defensive Arts Plus</li>
+                        <li><a href="https://goo.gl/maps/rbAebP4RgGtHrsCo9">MacDade Blvd. & Fairview Rd.<br>Woodlyn, PA
+                                19094</a></li>
+                    </ul>
                 </div>
-                <div class="row">
-                    <div class="col text-center">
-                        <span class="text-light">Made in <a class="text-light" href="https://getbootstrap.com/">Bootstrap</a></span>
-                    </div>
+                <div class="col-sm-6 col-lg-4 text-white">
+                    <h5>Social</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="mailto:frank.smith@defensiveartsplus.com"><i class="fa fa-envelope-o"></i>
+                                &nbsp;frank.smith@defensiveartsplus.com</a></li>
+                        <li><a href="tel:+16104940649"><i class="fa fa-phone"></i> &nbsp;(610) 494-0649</a></li>
+                    </ul>
+                    <!--<a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>-->
+                </div>
+                <div class="col-lg-4 text-white">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled text-light">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./aboutUs.html">About Us</a></li>
+                        <li><a href="classTimesRates.html">Class Times and Rates</a></li>
+                    </ul>
                 </div>
             </div>
-        </footer>
+            <div class="row">
+                <div class="col text-center">
+                    <span class="text-light">Made in <a class="text-light"
+                            href="https://getbootstrap.com/">Bootstrap</a></span>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-        <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
-        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
-        <script src="js/script.js"></script>
-    </body>
+    <script src="js/script.js"></script>
+</body>
+
 </html>
