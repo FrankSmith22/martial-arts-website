@@ -1,4 +1,4 @@
-const m = {
+var m = {
     //object of arrays to be passed to kataCardGenerator function
     colClasses: ["col-lg-5", "col-xl-4", "col-md-6", "mt-3", "mb-3"],
 

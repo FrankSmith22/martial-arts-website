@@ -1,0 +1,150 @@
+$text-primary-sub: #439bfa;
+$primary-light: #a4d0ff;
+
+#brandLogo {
+    height: 75px;
+}
+
+@media (max-width: 576px) {
+    #brandLogo {
+        height: 50px;
+    }
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu a::after {
+    transform: rotate(-90deg);
+    position: absolute;
+    right: 6px;
+    top: 0.8em;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+}
+
+.text-red {
+    color: red;
+}
+
+.text-primary-sub {
+    color: $text-primary-sub;
+}
+
+.bg-primary-light {
+    background-color: $primary-light;
+}
+
+.bg-footer-gray {
+    background-color: #f7f7f7;
+}
+
+p {
+    line-height: unset;
+}
+
+.padded-row {
+    padding-top: 4rem;
+}
+
+.octagon-bullets {
+    list-style-image: url("/assets/imgs/octagonal_bullets_7x7.svg");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Raleway", sans-serif;
+    padding-bottom: 1rem;
+}
+
+.card {
+    transition: 0.3s ease;
+}
+.card.hover:hover {
+    box-shadow: 0px 0px 6px gray;
+}
+
+#instructorTabs {
+    font-size: 18px;
+}
+
+.w-33 {
+    width: 33.33% !important;
+}
+
+.carousel-caption {
+    background-color: #95959569;
+    border-radius: 1rem;
+}
+
+.border-gray-light {
+    border-color: #bcbcbc;
+}
+
+.border-blue-light {
+    border-color: $primary-light;
+}
+
+.classPhotoImg {
+    height: 15rem;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+#classPhotoModalImage {
+    object-fit: cover;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 500px) {
+    .mobileOnlyBr {
+        display: none;
+    }
+}
+
+/*
+Following card-deck CSS gratefully provided by FrankieDoodie: 
+https://codepen.io/FrankieDoodie/pen/OoVXvp?editors=1100
+*/
+
+.card-deck {
+    justify-content: space-around;
+}
+
+.card-deck .card {
+    margin: 0 15px 1.5rem;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .card-deck .card {
+        -ms-flex: 0 0 48.7%;
+        flex: 0 0 48.7%;
+        margin: 0 0 1.5rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .card-deck .card {
+        -ms-flex: 0 0 32%;
+        flex: 0 0 32%;
+        margin: 0 0 1.5rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .card-deck .card {
+        -ms-flex: 0 0 32%;
+        flex: 0 0 32%;
+        margin: 0 0 1.5rem;
+    }
+}
