@@ -6,7 +6,7 @@ $(function () {
         for (var i = 0; i < titleArray.length; i++) {
             var col = document.createElement("div");
             col.classList.add("col-lg-5", "col-xl-4", "col-md-6", "mt-3", "mb-3");
-            col.innerHTML = '<div class="card kataCard hover border-blue-light rounded"><div class="card-body embed-responsive embed-responsive-16by9"><video class="embed-responsive-item" controlssrc="assets/videos/' + videoUrlArray[i] + '.mp4"></video></div><div class="card-footer"><h5 class="card-title">' + titleArray[i] + '</h5><p class="text-muted">' + footerArray[i] + '</p></div></div>';
+            col.innerHTML = '<div class="card kataCard hover border-blue-light rounded"><div class="card-body embed-responsive embed-responsive-16by9"><video class="embed-responsive-item" controls src="assets/videos/' + videoUrlArray[i] + '.mp4"></video></div><div class="card-footer"><h5 class="card-title">' + titleArray[i] + '</h5><p class="text-muted">' + footerArray[i] + '</p></div></div>';
             row.appendChild(col);
         }
     }
