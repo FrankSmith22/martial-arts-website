@@ -19,15 +19,21 @@ $(function () {
   });
   $('.carousel').carousel({ interval: 2000 });
 
-  $('.classPhotoImg').click(function (e) {
-    var title = e.target.nextElementSibling.innerText
+  $('.enlargePhoto').click(function (e) {
+    var title;
+    if(e.target.src.substr(-13, 13) === "mitose_12.jpg"){
+      title = "The above picture, from left to right, are: Honorable General Dwight D. Eisenhower, Honorable Alvin M. Mitose (son of Honorable Great Grand Master), and Honorable Great Grand Master James M. Mitose. Honorable General Eisenhower was the Honorary President of the American and Japanese Goodwill and Friendship Society. The author, Honorable Great Grand Master James M. Mitose, is Head of all Kosho-Shorei Ministers and is the Founder and President of the American and Japanese Goodwill and Friendship Society."
+    }
+    else{
+      title = e.target.nextElementSibling.innerText;
+    }
     var image = e.target.src;
-    $('#classPhotoModalTitle').text(title);
-    $('#classPhotoModalImage').attr('src', image);
-    $('#classPhotoModalAnchor').attr('href', image);
-    $('#classPhotoModal').modal('show');
+    $('#photoModalTitle').text(title);
+    $('#photoModalImage').attr('src', image);
+    $('#photoModalAnchor').attr('href', image);
+    $('#photoModal').modal('show');
   });
-  $('#classPhotoModal').on('hidden.bs.modal', function () {
+  $('#photoModal').on('hidden.bs.modal', function () {
     $(this).removeData('bs.modal');
   });
 })
